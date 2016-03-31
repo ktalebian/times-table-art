@@ -1,0 +1,50 @@
+doctype html
+html(class="no-js")
+    head
+        title= title
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        meta(name="description", content="A visual representation of the multiplication table")
+        meta(name="author", content="Kousha Talebian")
+
+        if (ENV=="production")
+            link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+            link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css')
+            link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+            link(rel='stylesheet', href='//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css')
+        else
+            link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+            link(rel='stylesheet', href='/bower_components/animate.css/animate.min.css')
+            link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.min.css')
+            link(rel='stylesheet', href='/bower_components/chartist/dist/chartist.min.css')
+            link(rel='stylesheet', href='/bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css')
+            link(rel='stylesheet', href='/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css')
+
+        link(rel='stylesheet', href='/libraries/xeon/css/main.css')
+        link(rel='stylesheet', href='/assets/css/style.css')
+
+
+    // block body is used for register/login page
+    body
+        #application
+
+        // 3rd Party Scripts
+        if (ENV=="production")
+            script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+            script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+            script(src='https://cdn.jsdelivr.net/prettyphoto/3.1.6/js/jquery.prettyPhoto.js')
+            script(src='//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js')
+        else
+            script(src='/bower_components/jquery/dist/jquery.min.js')
+            script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
+            script(src='/libraries/xeon/js/jquery.prettyPhoto.js')
+            script(src='/bower_components/chartist/dist/chartist.min.js')
+            script(src='/bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js')
+            script(src='/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js')
+
+        script(src='/libraries/xeon/js/main.js')
+        script(src='/assets/js/main.js')
+
+        // MDM Application
+        script(src='/assets/js/app.js')

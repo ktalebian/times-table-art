@@ -1,0 +1,30 @@
+{
+  "name": "times-table-art",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Kousha Talebian <kousha.talebian@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.5.1",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0",
+    "jquery": "~2.2.0",
+    "chartist": "~0.9.5",
+    "seiyria-bootstrap-slider": "~6.0.6",
+    "bootstrap-touchspin": "~3.0.3"
+  }
+}
