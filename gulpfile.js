@@ -26,7 +26,7 @@ var browserSync = require('browser-sync').create();
 var path = require('path');
 var runSequence = require('run-sequence');
 var config = require('./config/config');
-var env = process.env.NODE_ENV;
+var env = process.env.NODE_ENV || 'local';
 
 // Paths
 var PATHS = {};

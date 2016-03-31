@@ -173,7 +173,7 @@ module.exports = React.createClass({
     },
 
     render: function () {
-        var toggleText = 'Details';
+        var toggleText = 'Advance';
         if (this.state.showAdvance) {
             toggleText = 'Hide';
         }
